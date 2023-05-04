@@ -1,0 +1,73 @@
+/* HACER MEDIAQUERIE PARA BANNER */
+
+/* Configuracion global*/
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --blanco: #f5f6f7;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+} */
+
+
+
+
+
+/* Barra de navegacion */
+.navbar {
+  padding: 2rem;
+  background-color: var(--blanco);
+}
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;  
+}
+.navbar-brand img {
+  height: 60px;
+  width: auto;
+}
+
+/* Seccion hero */
+.hero {
+  background-color: var(--blanco);
+  text-align: center;
+}
+.hero .carousel {
+  height: 500px;
+  width: 100%;
+  object-fit: contain;
+}
+.carousel-item img {
+  height: 500px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Seccion productos */
+.ancho-para-columna {
+  min-width: 200px;
+}
+
+
+
+/* Adaptable (Responsivo) */
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
